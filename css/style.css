@@ -4,3 +4,7 @@ body {
   color: white;
   background-image: url("../img/bg1.png");
 }
+body .con {
+  max-width: 800px;
+  margin: 0px auto;
+}

@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
-    <!--script src="http://code.jquery.com/jquery-latest.js"></script-->
+    <script src="https://cdn.jsdelivr.net/markdown-it/8.3.1/markdown-it.min.js"></script>
 </head>
 <body>
     <div>
         <div>
-            <div id="con_1"></div>
+            <div id="con_1" class="con"></div>
         </div>
     </div>
     <script>
-        document.getElementById("con_1").innerHTML = getTxtFile("get/2017_07_25__10_55.md");
+        var md = window.markdownit();
+        var result = md.render(getTxtFile("get/2017_07_25__10_55.md"));
+        document.getElementById("con_1").innerHTML = result;
     </script>
 </body>
 </html>
