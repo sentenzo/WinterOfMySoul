@@ -10,3 +10,25 @@ body .con {
   padding: 20px;
   background-image: url("../img/bg1.png");
 }
+.md img {
+  max-width: 80%;
+  margin: 0 auto;
+  display: block;
+  max-height: 480px;
+}
+.md pre {
+  background-color: #333;
+  color: #ddd;
+  padding: 15px 30px;
+  border-left: 3px solid #7fa;
+}
+.md pre code {
+  font-family: monospace;
+}
+.md table {
+  border-collapse: collapse;
+}
+.md td {
+  border: 1px solid gray;
+  padding: 1px 5px;
+}

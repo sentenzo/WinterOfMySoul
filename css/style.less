@@ -1,14 +1,40 @@
+@max-w: 800px;
 body {
     font-family: Arial;
     color: #aaa;
     background-image: url("../img/bg0.jpg");
     //background-image: url("../img/bg1.png");
     //cursor: url("../img/bloodCell_24.png");
-    
     .con {
-        max-width: 800px;
+        max-width: @max-w;
         margin: 20px auto;
         padding: 20px;
         background-image: url("../img/bg1.png");
+    }
+}
+
+.md {
+    img {
+        //max-width: @max-w;
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+        max-height: 480px;
+    }
+    pre {
+        background-color: #333;
+        color: #ddd;
+        padding: 15px 30px;
+        border-left: 3px solid #7fa;
+        code {
+            font-family: monospace;
+        }
+    }
+    table {
+        border-collapse: collapse;
+    }
+    td {
+        border: 1px solid gray;
+        padding: 1px 5px;
     }
 }
