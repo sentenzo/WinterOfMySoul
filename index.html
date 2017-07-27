@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="image/ico" href="favicon.ico?v=0" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/markdown-it/8.3.1/markdown-it.min.js"></script>
+    <script src="js/markdown.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -16,8 +16,9 @@
         </div>
     </div>
     <script>
-        var md = window.markdownit();
-        var result = md.render(getTxtFile("get/en_0.md"));
+        //var md = window.markdownit();
+        var result = markdown.toHTML(getTxtFile("get/en_0.md"), 'Maruku'); 
+        //md.render(getTxtFile("get/en_0.md"));
         document.getElementById("con_1").innerHTML = result;
     </script>
 </body>
